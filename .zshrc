@@ -581,8 +581,6 @@ runcpp() {
   g++ -std=c++17 -Wall -Wextra -o "$output_name" "$1" && ./"$output_name"
 }
 
-# uv suggestion 
-# eval "$(uv generate-shell-completion zsh)"
 # export UV_LINK_MODE=copy
 
 ## [Completion]
@@ -617,3 +615,8 @@ export ELECTRON_OZONE_PLATFORM_HINT=wayland
 
 alias n='nvim'
 alias vi='vim'
+
+autoload -U compinit
+compinit
+# uv suggestion 
+eval "$(uv generate-shell-completion zsh)"
