@@ -620,3 +620,7 @@ autoload -U compinit
 compinit
 # uv suggestion 
 eval "$(uv generate-shell-completion zsh)"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/share/nvm/init-nvm.sh" ] && \. "/usr/share/nvm/init-nvm.sh"
+

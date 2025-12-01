@@ -61,4 +61,3 @@ keybind = super+b>j=goto_split:bottom
 keybind = super+b>k=goto_split:top
 keybind = super+b>l=goto_split:right
 
-keybind = shift+enter=text:\x1b\r
