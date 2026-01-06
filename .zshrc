@@ -291,7 +291,6 @@ alias nresolv="sudo $EDITOR /etc/resolv.conf"
 alias nb="$EDITOR ~/.bashrc"
 alias nz="$EDITOR ~/.zshrc"
 alias nf="$EDITOR ~/.config/fish/config.fish"
-alias nneofetch="$EDITOR ~/.config/neofetch/config.conf"
 alias nplymouth="sudo $EDITOR /etc/plymouth/plymouthd.conf"
 alias nvconsole="sudo $EDITOR /etc/vconsole.conf"
 alias nenvironment="sudo $EDITOR /etc/environment"
@@ -428,7 +427,7 @@ alias personal='cp -Rf /personal/* ~'
 [[ -f ~/.zshrc-personal ]] && . ~/.zshrc-personal
 
 # reporting tools - install when not installed
-# neofetch
+# fastfetch
 #screenfetch
 #alsi
 #paleofetch
@@ -624,3 +623,22 @@ eval "$(uv generate-shell-completion zsh)"
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/share/nvm/init-nvm.sh" ] && \. "/usr/share/nvm/init-nvm.sh"
 
+# chpwd hook
+function chpwd_ls() {
+  l
+}
+
+# chpwd hook for python
+function chpwd_venv() {
+  if [[ -d .venv ]]; then
+    source .venv/bin/activate
+  elif [[ -d venv ]]; then 
+    source venv/bin/activate
+  elif [[ -n "$VIRTUAL_ENV" ]]; then
+    deactivate
+  fi
+}
+
+autoload -U add-zsh-hook
+add-zsh-hook chpwd chpwd_ls
+add-zsh-hook chpwd chpwd_venv
