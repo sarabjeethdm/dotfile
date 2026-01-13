@@ -36,7 +36,7 @@
   },
   "show_signature_help_after_edits": false,
   "auto_signature_help": false,
-  "relative_line_numbers": "enabled",
+  "relative_line_numbers": true,
   "gutter": {
     "line_numbers": true
   },
