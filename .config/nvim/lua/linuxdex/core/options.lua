@@ -13,6 +13,11 @@ opt.autoindent = true -- copy indent from current line when starting new one
 
 opt.wrap = true
 
+-- linebreak - showing clipped word in next line
+opt.linebreak = true
+opt.list = false
+opt.breakindent = true
+
 -- search settings
 opt.ignorecase = true -- ignore case when searching
 opt.smartcase = true -- if you include mixed case in your search, assumes you want case-sensitive
@@ -166,4 +171,3 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 		vim.highlight.on_yank({ timeout = 200, visual = true })
 	end,
 })
-

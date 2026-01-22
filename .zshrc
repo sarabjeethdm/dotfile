@@ -641,7 +641,7 @@ function chpwd_venv() {
 
 autoload -U add-zsh-hook
 add-zsh-hook chpwd chpwd_ls
-add-zsh-hook chpwd chpwd_venv
+# add-zsh-hook chpwd chpwd_venv
 
 # Open buffer line in editor
 autoload -Uz edit-command-line
