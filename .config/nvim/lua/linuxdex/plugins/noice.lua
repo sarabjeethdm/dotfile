@@ -9,7 +9,7 @@ return {
 				["cmp.entry.get_documentation"] = true,
 			},
 			signature = {
-				enabled = false, -- Disable automatic LSP signature help
+				enabled = true, -- Disable automatic LSP signature help
 			},
 		},
 		routes = {

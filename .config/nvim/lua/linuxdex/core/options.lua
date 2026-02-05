@@ -174,4 +174,4 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 
 
 -- disable the lsp logs
-vim.diagnostic.enable(false)
+-- vim.diagnostic.enable(false)
