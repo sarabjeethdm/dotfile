@@ -1,3 +1,4 @@
+-- lua/linuxdex/lazy.lua
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
 	vim.fn.system({
@@ -15,6 +16,7 @@ require("lazy").setup({ { import = "linuxdex.plugins" }, { import = "linuxdex.pl
 	checker = {
 		enabled = true,
 		notify = false,
+    frequency = 3600,
 	},
 	change_detection = {
 		notify = false,

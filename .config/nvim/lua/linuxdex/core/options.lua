@@ -175,3 +175,17 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 
 -- disable the lsp logs
 -- vim.diagnostic.enable(false)
+
+
+-- color for html tag in js, ts files
+vim.opt.termguicolors = true
+vim.cmd("syntax enable")
+
+-- Ensure treesitter highlighting takes precedence
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = { "javascript", "typescript", "javascriptreact", "typescriptreact", "html", "css" },
+	callback = function()
+		vim.treesitter.start()
+	end,
+})
+

@@ -45,10 +45,14 @@ config.window_padding = {
 
 config.window_close_confirmation = "NeverPrompt"
 
+-- maximize window when startup
 wezterm.on("gui-startup", function(cmd)
 	local tab, pane, window = mux.spawn_window(cmd or {})
 	window:gui_window():maximize()
 end)
+
+-- cursor style
+config.default_cursor_style = 'SteadyBlock'
 
 -- and finally, return the configuration to wezterm
 return config
