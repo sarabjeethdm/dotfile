@@ -22,12 +22,15 @@ disabled = false
 style = "bold italic red"
 
 [aws]
+format = " [$symbol]($style)"
 symbol = "  "
 
 [conda]
+format = " [$symbol]($style)"
 symbol = " "
 
 [dart]
+format = " [$symbol]($style)"
 symbol = " "
 
 [docker_context]
@@ -40,9 +43,11 @@ detect_folders = []
 disabled = false
 
 [elixir]
+format = " [$symbol]($style)"
 symbol = " "
 
 [elm]
+format = " [$symbol]($style)"
 symbol = " "
 
 [git_branch]
@@ -71,7 +76,8 @@ format = "$all_status$ahead_behind"
 
 [golang]
 style = 'blue'
-symbol = " "
+format = " [$symbol GO ]($style)"
+symbol = ""
 
 [hg_branch]
 symbol = " "
@@ -81,15 +87,19 @@ symbol = " "
 format = '» [${symbol}java (\($virtualenv\) )]($style)'
 
 [julia]
+format = " [$symbol]($style)"
 symbol = " "
 
 [memory_usage]
+format = " [$symbol]($style)"
 symbol = " "
 
 [nim]
+format = " [$symbol]($style)"
 symbol = " "
 
 [nix_shell]
+format = " [$symbol]($style)"
 symbol = " "
 
 [package]
@@ -97,9 +107,11 @@ disabled = true
 
 [perl]
 symbol = " "
+format = " [$symbol]($style)"
 
 [php]
 symbol = " "
+format = " [$symbol php ]($style)"
 
 [python]
 symbol = " "
@@ -111,19 +123,24 @@ detect_extensions = ["py"]
 
 [ruby]
 symbol = " "
+format = " [$symbol]($style)"
 
 [rust]
 style = 'blue'
+format = " [$symbol rust]($style)"
 symbol = " "
 
 [scala]
 symbol = " "
+format = " [$symbol]($style)"
 
 [shlvl]
 symbol = " "
+format = " [$symbol]($style)"
 
 [swift]
 symbol = "ﯣ "
+format = " [$symbol]($style)"
 
 [nodejs]
 format = "» [ Node.js](bold green) "
