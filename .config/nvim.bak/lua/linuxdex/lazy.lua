@@ -16,6 +16,7 @@ require("lazy").setup({ { import = "linuxdex.plugins" }, { import = "linuxdex.pl
 	checker = {
 		enabled = true,
 		notify = false,
+    frequency = 3600,
 	},
 	change_detection = {
 		notify = false,

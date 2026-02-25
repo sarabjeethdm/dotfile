@@ -127,8 +127,8 @@ format = " [$symbol]($style)"
 
 [rust]
 style = 'blue'
-format = " [$symbol rust]($style)"
-symbol = " "
+format = " [$symbol rust ]($style)"
+symbol = ""
 
 [scala]
 symbol = " "

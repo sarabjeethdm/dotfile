@@ -189,6 +189,3 @@ vim.api.nvim_create_autocmd("FileType", {
 	end,
 })
 
--- remove bufferline
-vim.opt.showtabline = 0
-
